@@ -5,7 +5,7 @@
   "entrypoint": "README.md",
   "docs": "docs/index.md",
   "describes": "pkg:npm/mermaid@11.14.0",
-  "private": false,
+  "private": true,
   "skills": {
     "mermaid-diagrams": {
       "path": "skills/mermaid-diagrams/SKILL.md"
