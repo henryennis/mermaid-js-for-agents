@@ -1,8 +1,7 @@
 name: Release
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -53,7 +52,6 @@ jobs:
     name: Changesets release
     runs-on: ubuntu-latest
     needs: validate
-    if: ${{ secrets.NPM_TOKEN != '' }}
     permissions:
       contents: write
       pull-requests: write
