@@ -29,6 +29,17 @@ function assertPath(errors, relativePath, { root = ROOT, label = relativePath } 
     errors.push(`${label}: path does not exist (${relativePath})`);
 }
 
+function assertMarketplaceSource(errors, plugin, { root = ROOT } = {}) {
+  const label = `.agents/plugins/marketplace.json plugin ${plugin.name} source`;
+  const source = plugin.source;
+  if (typeof source === "string") {
+    if (/^(https?:|git@|github:)/.test(source)) return;
+    assertPath(errors, source, { root, label });
+    return;
+  }
+  assertPath(errors, source?.path, { root, label: `${label}.path` });
+}
+
 export function validateRepoManifests({ root = ROOT } = {}) {
   const errors = [];
 
@@ -70,10 +81,7 @@ export function validateRepoManifests({ root = ROOT } = {}) {
 
   const marketplace = readJson(".agents/plugins/marketplace.json", root);
   for (const plugin of marketplace.plugins ?? []) {
-    assertPath(errors, plugin.source?.path, {
-      root,
-      label: `.agents/plugins/marketplace.json plugin ${plugin.name} source.path`
-    });
+    assertMarketplaceSource(errors, plugin, { root });
   }
 
   return errors;

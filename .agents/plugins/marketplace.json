@@ -1,20 +1,13 @@
 {
   "name": "mermaid-js-for-agents-local",
+  "description": "Local Claude Code plugin marketplace for Mermaid.js for Agents.",
+  "owner": {
+    "name": "Mermaid.js for Agents contributors"
+  },
   "plugins": [
     {
       "name": "mermaid-js-for-agents",
-      "source": {
-        "source": "local",
-        "path": "./"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools",
-      "interface": {
-        "displayName": "Mermaid.js for Agents"
-      }
+      "source": "./"
     }
   ]
 }

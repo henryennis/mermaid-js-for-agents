@@ -8,10 +8,10 @@ eval metadata, update coverage guidance, or refresh upstream evidence instead.
 - Upstream snapshot: 932f0167d8f8933f12e024ee6353d46b0ac690a40b702fa172e0222474502459
 - Tracked Mermaid release: mermaid@11.14.0
 - Diagram source directories: 27
-- Eval scenarios: 9
-- Eval scenarios with metadata: 9
-- Opportunities: 35
-- Counts by priority: P0 0, P1 24, P2 11, P3 0
+- Eval scenarios: 13
+- Eval scenarios with metadata: 13
+- Opportunities: 31
+- Counts by priority: P0 0, P1 20, P2 11, P3 0
 
 ## P1
 
@@ -32,33 +32,6 @@ eval metadata, update coverage guidance, or refresh upstream evidence instead.
 - **Evidence:** upstream:c4, coverage:supported, evals:no-c4-repair
 - **Next:** Add one repair scenario with a realistic C4 syntax mistake and criteria that preserve
   user intent.
-
-### class-repair-coverage
-
-- **Gap:** Supported Mermaid Class diagrams have no repair eval coverage.
-- **Diagram type(s):** class
-- **Mode(s):** repair
-- **Evidence:** upstream:class, coverage:supported, evals:no-class-repair
-- **Next:** Add one repair scenario with a realistic Class syntax mistake and criteria that preserve
-  user intent.
-
-### er-repair-coverage
-
-- **Gap:** Supported Mermaid ER diagrams have no repair eval coverage.
-- **Diagram type(s):** er
-- **Mode(s):** repair
-- **Evidence:** upstream:er, coverage:supported, evals:no-er-repair
-- **Next:** Add one repair scenario with a realistic ER syntax mistake and criteria that preserve
-  user intent.
-
-### gantt-create-coverage
-
-- **Gap:** Supported Mermaid Gantt diagrams have no create eval coverage.
-- **Diagram type(s):** gantt
-- **Mode(s):** create
-- **Evidence:** upstream:gantt, coverage:supported, evals:no-gantt-create
-- **Next:** Add one create scenario that asks for a Gantt diagram in its natural use case and checks
-  semantic essentials.
 
 ### gantt-repair-coverage
 
@@ -176,16 +149,6 @@ eval metadata, update coverage guidance, or refresh upstream evidence instead.
 - **Evidence:** upstream:requirement, coverage:supported, evals:no-requirement-repair
 - **Next:** Add one repair scenario with a realistic Requirement syntax mistake and criteria that
   preserve user intent.
-
-### sequence-create-coverage
-
-- **Gap:** Supported Mermaid Sequence diagrams have no create eval coverage.
-- **Diagram type(s):** sequence
-- **Mode(s):** create
-- **Evidence:** upstream:sequence, coverage:supported, evals:no-sequence-create,
-  release-highlight:sequence
-- **Next:** Add one create scenario that asks for a Sequence diagram in its natural use case and
-  checks semantic essentials.
 
 ### state-create-coverage
 

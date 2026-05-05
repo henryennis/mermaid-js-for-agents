@@ -1,0 +1,1 @@
+Repair a Mermaid ER diagram with correct entity blocks, relationship verbs, and cardinality markers.

@@ -8,7 +8,11 @@
     "state-lifecycle-repair",
     "unsafe-rendering-strict",
     "parser-validation-advice",
-    "class-package-model"
+    "class-package-model",
+    "class-relationship-repair",
+    "er-cardinality-repair",
+    "sequence-login-handshake",
+    "gantt-release-plan"
   ],
-  "notes": "Expanded pre-release scenarios covering creation, repair, class modeling, renderer fallback, validation honesty, and security-sensitive rendering behavior. Record Tessl scores before public marketplace submission."
+  "notes": "Expanded pre-release scenarios covering creation, repair, class modeling, sequence handshakes, Gantt schedules, renderer fallback, validation honesty, and security-sensitive rendering behavior. Record Tessl scores before public marketplace submission."
 }

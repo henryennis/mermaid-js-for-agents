@@ -1,0 +1,36 @@
+{
+  "criteria": [
+    {
+      "name": "Uses sequence diagram syntax",
+      "description": "Uses Mermaid sequenceDiagram syntax rather than a flowchart, class diagram, or ER diagram.",
+      "weight": 0.2
+    },
+    {
+      "name": "Includes all participants",
+      "description": "Includes Browser, WebApp, AuthService, and UserStore as participants or clearly equivalent actor names.",
+      "weight": 0.2
+    },
+    {
+      "name": "Orders the happy path correctly",
+      "description": "Shows credentials sent from Browser to WebApp, verification through AuthService and UserStore, and a successful dashboard/session response.",
+      "weight": 0.25
+    },
+    {
+      "name": "Models failure branch",
+      "description": "Uses an alt/else-style branch for valid versus invalid credentials and returns an error on the invalid path.",
+      "weight": 0.25
+    },
+    {
+      "name": "Explains type choice briefly",
+      "description": "Includes one concise sentence explaining that the diagram fits ordered interactions over time.",
+      "weight": 0.1
+    }
+  ],
+  "metadata": {
+    "diagramTypes": ["sequence"],
+    "modes": ["create"],
+    "riskAreas": ["semantics", "syntax"],
+    "rendererTargets": ["markdown"],
+    "difficulty": "intermediate"
+  }
+}

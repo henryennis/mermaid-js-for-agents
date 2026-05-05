@@ -13,16 +13,17 @@ the target environment.
 
 ## Common repair patterns
 
-| Symptom                                      | Likely cause                                           | Minimal repair                                            |
-| -------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
-| Flowchart fails near a label with `:` or `/` | Unquoted punctuation-heavy label                       | Quote the label: `node["API: /v1/items"]`.                |
-| Flowchart fails near `end`                   | Node ID or label conflicts with a keyword              | Rename the ID or quote the label.                         |
-| Sequence message line fails                  | Missing colon after arrow target                       | Change `A->>B Message` to `A->>B: Message`.               |
-| Sequence actor name is inconsistent          | Participant aliases omitted or mistyped                | Add explicit `participant` lines.                         |
-| Class diagram fails with generics            | Renderer dislikes `<T>` or nested punctuation          | Simplify or quote labels; keep the semantic relationship. |
-| ER diagram cardinality looks wrong           | Cardinality symbols reversed or entity names ambiguous | Preserve entity names, repair only cardinality syntax.    |
-| Gantt dependency fails                       | Task ID missing or referenced before declaration       | Add explicit IDs and use `after id`.                      |
-| GitHub does not render a beta type           | Host Mermaid version lags upstream                     | Offer stable fallback or note required Mermaid version.   |
+| Symptom                                        | Likely cause                                                         | Minimal repair                                                          |
+| ---------------------------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Flowchart fails near a label with `:` or `/`   | Unquoted punctuation-heavy label                                     | Quote the label: `node["API: /v1/items"]`.                              |
+| Flowchart fails near `end`                     | Node ID or label conflicts with a keyword                            | Rename the ID or quote the label.                                       |
+| Sequence message line fails                    | Missing colon after arrow target                                     | Change `A->>B Message` to `A->>B: Message`.                             |
+| Sequence actor name is inconsistent            | Participant aliases omitted or mistyped                              | Add explicit `participant` lines.                                       |
+| Class diagram fails with generics              | Renderer dislikes `<T>` or nested punctuation                        | Simplify or quote labels; keep the semantic relationship.               |
+| Class cardinality is ambiguous or inconsistent | Bare multiplicity tokens are less portable than quoted cardinalities | Prefer explicit quoted cardinalities, e.g. `A "1" *-- "many" B : owns`. |
+| ER diagram cardinality looks wrong             | Cardinality symbols reversed or entity names ambiguous               | Preserve entity names, repair only cardinality syntax.                  |
+| Gantt dependency fails                         | Task ID missing or referenced before declaration                     | Add explicit IDs and use `after id`.                                    |
+| GitHub does not render a beta type             | Host Mermaid version lags upstream                                   | Offer stable fallback or note required Mermaid version.                 |
 
 ## Example: sequence repair
 

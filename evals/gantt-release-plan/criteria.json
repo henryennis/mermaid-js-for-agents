@@ -1,0 +1,36 @@
+{
+  "criteria": [
+    {
+      "name": "Uses Gantt syntax",
+      "description": "Uses Mermaid gantt syntax rather than a flowchart or timeline.",
+      "weight": 0.2
+    },
+    {
+      "name": "Includes schedule essentials",
+      "description": "Includes the project start date, design review, implementation, QA, documentation, and release milestone.",
+      "weight": 0.25
+    },
+    {
+      "name": "Models dependencies",
+      "description": "Shows implementation after design review, QA after implementation, documentation after implementation, and release after both QA and documentation are complete or clearly notes the limiting dependency.",
+      "weight": 0.25
+    },
+    {
+      "name": "Uses readable organization",
+      "description": "Uses sections, concise task labels, and Mermaid-friendly dates/durations.",
+      "weight": 0.15
+    },
+    {
+      "name": "Assumptions note",
+      "description": "Includes one short assumptions sentence outside the diagram.",
+      "weight": 0.15
+    }
+  ],
+  "metadata": {
+    "diagramTypes": ["gantt"],
+    "modes": ["create"],
+    "riskAreas": ["semantics", "syntax"],
+    "rendererTargets": ["markdown"],
+    "difficulty": "intermediate"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "criteria": [
+    {
+      "name": "Uses ER diagram syntax",
+      "description": "Returns Mermaid erDiagram syntax rather than switching to a class diagram or flowchart.",
+      "weight": 0.2
+    },
+    {
+      "name": "Repairs cardinality markers",
+      "description": "Replaces prose cardinalities such as `one to many` with valid Mermaid ER cardinality notation.",
+      "weight": 0.25
+    },
+    {
+      "name": "Preserves entities and attributes",
+      "description": "Keeps USER, DIAGRAM, and REVIEW with concise id/title/email/rating-style fields.",
+      "weight": 0.2
+    },
+    {
+      "name": "Preserves relationship semantics",
+      "description": "Represents User-to-Diagram as one-to-many, Diagram-to-Review as zero-or-more reviews, and Review-to-User as exactly one author.",
+      "weight": 0.25
+    },
+    {
+      "name": "Explains smallest repair",
+      "description": "Explains the cardinality syntax repair briefly without inventing extra model details.",
+      "weight": 0.1
+    }
+  ],
+  "metadata": {
+    "diagramTypes": ["er"],
+    "modes": ["repair"],
+    "riskAreas": ["syntax", "semantics"],
+    "rendererTargets": ["markdown"],
+    "difficulty": "intermediate"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "criteria": [
+    {
+      "name": "Uses class diagram syntax",
+      "description": "Returns Mermaid classDiagram syntax rather than switching diagram types.",
+      "weight": 0.2
+    },
+    {
+      "name": "Normalizes multiplicity syntax",
+      "description": "Uses quoted relationship cardinality/label syntax for portability, especially replacing the bare `many` token with an explicit quoted cardinality.",
+      "weight": 0.25
+    },
+    {
+      "name": "Preserves classes and details",
+      "description": "Keeps Skill, MermaidSkill, ReferenceFile, and EvalScenario with the requested concise attributes.",
+      "weight": 0.2
+    },
+    {
+      "name": "Preserves intended relationships",
+      "description": "Keeps MermaidSkill inheriting from Skill, Skill loading many ReferenceFiles, and EvalScenario testing exactly one Skill.",
+      "weight": 0.25
+    },
+    {
+      "name": "Explains smallest repair",
+      "description": "Gives one concise sentence explaining the minimal syntax repair without overclaiming validation.",
+      "weight": 0.1
+    }
+  ],
+  "metadata": {
+    "diagramTypes": ["class"],
+    "modes": ["repair"],
+    "riskAreas": ["syntax", "semantics"],
+    "rendererTargets": ["markdown"],
+    "difficulty": "intermediate"
+  }
+}
