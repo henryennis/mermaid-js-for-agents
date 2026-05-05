@@ -1,0 +1,8 @@
+sequenceDiagram
+  participant User
+  participant Agent
+  participant System
+  User->>Agent: Request diagram
+  Agent->>System: Validate syntax
+  System-->>Agent: Validation result
+  Agent-->>User: Mermaid diagram

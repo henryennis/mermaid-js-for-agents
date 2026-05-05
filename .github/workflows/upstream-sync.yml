@@ -1,0 +1,99 @@
+name: Upstream Mermaid evidence sync
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Refresh generated Mermaid upstream evidence
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      changed: ${{ steps.diff.outputs.changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh upstream metadata
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run generate
+
+      - name: Validate refreshed package
+        run: npm run check
+
+      - name: Detect generated evidence diff
+        id: diff
+        run: |
+          if git diff --quiet -- data/mermaid-upstream.json skills/mermaid-diagrams/references/upstream-evidence.md; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --binary -- data/mermaid-upstream.json skills/mermaid-diagrams/references/upstream-evidence.md > upstream-evidence.patch
+          fi
+
+      - name: Upload evidence patch
+        if: steps.diff.outputs.changed == 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: upstream-evidence-patch
+          path: upstream-evidence.patch
+          if-no-files-found: error
+
+  create-pr:
+    name: Create upstream evidence pull request
+    needs: refresh
+    if: needs.refresh.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+
+      - name: Download evidence patch
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: upstream-evidence-patch
+
+      - name: Apply evidence patch
+        run: git apply upstream-evidence.patch
+
+      - name: Create upstream evidence pull request
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(mermaid): refresh upstream evidence snapshot"
+          title: "chore(mermaid): refresh upstream evidence snapshot"
+          body: |
+            Automated Mermaid upstream evidence refresh.
+
+            Review the generated reference diff. If upstream behavior creates a skill fitness gap for diagram creation or repair, run the agentic maintenance workflow or update the skill references/evals manually before merging.
+
+            Validation: `npm run check` passed in the read-only refresh job.
+          branch: automation/mermaid-upstream-evidence
+          labels: |
+            mermaid-upstream
+            automated

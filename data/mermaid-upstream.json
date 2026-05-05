@@ -1,0 +1,269 @@
+{
+  "repository": "https://github.com/mermaid-js/mermaid",
+  "docsPath": "packages/mermaid/src/docs",
+  "diagramsPath": "packages/mermaid/src/diagrams",
+  "releaseEvidence": {
+    "source": "immutable-release-ref",
+    "release": {
+      "tag_name": "mermaid@11.14.0",
+      "name": "mermaid@11.14.0",
+      "target_commitish": "develop",
+      "published_at": "2026-04-01T09:17:48Z",
+      "html_url": "https://github.com/mermaid-js/mermaid/releases/tag/mermaid%4011.14.0",
+      "commit_sha": "2b9d054d622101a727b03c5d47a15f3bd98125fa"
+    },
+    "releaseHighlights": [
+      "- [#7526](https://github.com/mermaid-js/mermaid/pull/7526) [`efe218a`](https://github.com/mermaid-js/mermaid/commit/efe218a47fb5a4c2bd5489b48ce69213b141e519) - add new TreeView diagram",
+      "- [#7526](https://github.com/mermaid-js/mermaid/pull/7526) [`efe218a`](https://github.com/mermaid-js/mermaid/commit/efe218a47fb5a4c2bd5489b48ce69213b141e519) - Add Wardley Maps diagram type (beta)",
+      "Adds Wardley Maps as a new diagram type to Mermaid (available as `wardley-beta`). Wardley Maps are visual representations of business strategy that help map value chains and component evolution.",
+      "- Component positioning with [visibility, evolution] coordinates (OWM format)",
+      "- Anchors for users/customers",
+      "- Multiple link types: dependencies, flows, labeled links",
+      "- Evolution arrows and trend indicators",
+      "- Custom evolution stages with optional dual labels",
+      "- Custom stage widths using @boundary notation",
+      "- Pipeline components with visibility inheritance",
+      "- Annotations, notes, and visual elements",
+      "- Source strategy markers: build, buy, outsource, market",
+      "- Inertia indicators",
+      "- Theme integration",
+      "- [#7526](https://github.com/mermaid-js/mermaid/pull/7526) [`efe218a`](https://github.com/mermaid-js/mermaid/commit/efe218a47fb5a4c2bd5489b48ce69213b141e519)  - feat: implement neo look styling for state diagrams",
+      "- [#7526](https://github.com/mermaid-js/mermaid/pull/7526) [`efe218a`](https://github.com/mermaid-js/mermaid/commit/efe218a47fb5a4c2bd5489b48ce69213b141e519)  - feat: implement neo look support for sequence diagrams with drop shadows, and enhanced styling",
+      "- [#7526](https://github.com/mermaid-js/mermaid/pull/7526) [`efe218a`](https://github.com/mermaid-js/mermaid/commit/efe218a47fb5a4c2bd5489b48ce69213b141e519)  - feat: add `randomize` config option for architecture diagrams, defaulting to `false` for deterministic layout",
+      "- [#7526](https://github.com/mermaid-js/mermaid/pull/7526) [`efe218a`](https://github.com/mermaid-js/mermaid/commit/efe218a47fb5a4c2bd5489b48ce69213b141e519) - feat: Add option to change timeline direction"
+    ],
+    "docsDirectories": [
+      {
+        "name": ".vitepress",
+        "path": "packages/mermaid/src/docs/.vitepress",
+        "sha": "c13839f1eebbf77b647e00af596ab21f5faa17ff",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/docs/.vitepress"
+      },
+      {
+        "name": "community",
+        "path": "packages/mermaid/src/docs/community",
+        "sha": "0190b81ffc1fc5a0a842a5c162f0e5cf85f57d21",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/docs/community"
+      },
+      {
+        "name": "config",
+        "path": "packages/mermaid/src/docs/config",
+        "sha": "63fdcd6b4d33c9e61aa616ba3f9f336815526878",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/docs/config"
+      },
+      {
+        "name": "diagrams",
+        "path": "packages/mermaid/src/docs/diagrams",
+        "sha": "685719b6712b3a2b7212581b608c259136469c25",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/docs/diagrams"
+      },
+      {
+        "name": "ecosystem",
+        "path": "packages/mermaid/src/docs/ecosystem",
+        "sha": "292514faf7804bb8616b56f3331ae569e567b393",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/docs/ecosystem"
+      },
+      {
+        "name": "img",
+        "path": "packages/mermaid/src/docs/img",
+        "sha": "361e47f952611e09e2a16edc943460381262bb8a",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/docs/img"
+      },
+      {
+        "name": "intro",
+        "path": "packages/mermaid/src/docs/intro",
+        "sha": "192979f4d72c25e421ca872d561cb903a0479fc0",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/docs/intro"
+      },
+      {
+        "name": "landing",
+        "path": "packages/mermaid/src/docs/landing",
+        "sha": "5093d326322cbd6cda774e7e0c42808995df29e5",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/docs/landing"
+      },
+      {
+        "name": "news",
+        "path": "packages/mermaid/src/docs/news",
+        "sha": "72243f5d9c564df09113f99b16520e504316bf4f",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/docs/news"
+      },
+      {
+        "name": "public",
+        "path": "packages/mermaid/src/docs/public",
+        "sha": "114d8881cff4e65c22daee379e9cb43aafd04dca",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/docs/public"
+      },
+      {
+        "name": "syntax",
+        "path": "packages/mermaid/src/docs/syntax",
+        "sha": "fca2f5388295c0310c85658bda1f0ec3addd2617",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/docs/syntax"
+      }
+    ],
+    "diagramDirectories": [
+      {
+        "name": "architecture",
+        "path": "packages/mermaid/src/diagrams/architecture",
+        "sha": "4c422916c41c5ab362e8f90efd9040ee8a10aac5",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/architecture"
+      },
+      {
+        "name": "block",
+        "path": "packages/mermaid/src/diagrams/block",
+        "sha": "bf6ab1d49fd47735412cdc6f48aaa22f79d9fcbb",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/block"
+      },
+      {
+        "name": "c4",
+        "path": "packages/mermaid/src/diagrams/c4",
+        "sha": "7ed8df40da95a2677f60ced1fdfeaad1cb138c88",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/c4"
+      },
+      {
+        "name": "class",
+        "path": "packages/mermaid/src/diagrams/class",
+        "sha": "50ba72cae0f7c85765fdea167336fcc4ed2783a5",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/class"
+      },
+      {
+        "name": "er",
+        "path": "packages/mermaid/src/diagrams/er",
+        "sha": "b849bfe75e7547dc6b7cea714f959b3b7e165d4a",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/er"
+      },
+      {
+        "name": "flowchart",
+        "path": "packages/mermaid/src/diagrams/flowchart",
+        "sha": "0e578d732c8711cf5adf5bbd79101311d0016187",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/flowchart"
+      },
+      {
+        "name": "gantt",
+        "path": "packages/mermaid/src/diagrams/gantt",
+        "sha": "9409e8b200d82372273a373dc32e16db094a7e0a",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/gantt"
+      },
+      {
+        "name": "git",
+        "path": "packages/mermaid/src/diagrams/git",
+        "sha": "9fa2c0e2cedf8404722750e9ceecaf4f96eb0c64",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/git"
+      },
+      {
+        "name": "info",
+        "path": "packages/mermaid/src/diagrams/info",
+        "sha": "9c0436f7a9850d8ece170696e0bd0ab84b953b79",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/info"
+      },
+      {
+        "name": "ishikawa",
+        "path": "packages/mermaid/src/diagrams/ishikawa",
+        "sha": "b852c88682646cf8b1282ee9a554b39933e77913",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/ishikawa"
+      },
+      {
+        "name": "kanban",
+        "path": "packages/mermaid/src/diagrams/kanban",
+        "sha": "215cc348169c85574adf2b3abe55f8ac3ba5a636",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/kanban"
+      },
+      {
+        "name": "mindmap",
+        "path": "packages/mermaid/src/diagrams/mindmap",
+        "sha": "b0c9b39f84e0d25c618ef166e688e964b0aae214",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/mindmap"
+      },
+      {
+        "name": "packet",
+        "path": "packages/mermaid/src/diagrams/packet",
+        "sha": "8917b6f73aab1a8cc9bd3aa9316f0fe2f7db8280",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/packet"
+      },
+      {
+        "name": "pie",
+        "path": "packages/mermaid/src/diagrams/pie",
+        "sha": "27563f850be7a73e4ee96f4f3c686639d42d9ee2",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/pie"
+      },
+      {
+        "name": "quadrant-chart",
+        "path": "packages/mermaid/src/diagrams/quadrant-chart",
+        "sha": "75434cb4e5659c2b457fdfa0717923dc3f529ff6",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/quadrant-chart"
+      },
+      {
+        "name": "radar",
+        "path": "packages/mermaid/src/diagrams/radar",
+        "sha": "21a7c34456239347648b1e40e600f30a0d4c0357",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/radar"
+      },
+      {
+        "name": "requirement",
+        "path": "packages/mermaid/src/diagrams/requirement",
+        "sha": "906d31927f05947b037708f06d10a6ba284dbc0b",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/requirement"
+      },
+      {
+        "name": "sankey",
+        "path": "packages/mermaid/src/diagrams/sankey",
+        "sha": "fa5e44ad31799844b29682761905e7b1f5d91f27",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/sankey"
+      },
+      {
+        "name": "sequence",
+        "path": "packages/mermaid/src/diagrams/sequence",
+        "sha": "e0d2f03268cbae11a2063b954196db930cddf6e8",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/sequence"
+      },
+      {
+        "name": "state",
+        "path": "packages/mermaid/src/diagrams/state",
+        "sha": "d1e6b8395167939bcbaedefff125501466d4aa0b",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/state"
+      },
+      {
+        "name": "timeline",
+        "path": "packages/mermaid/src/diagrams/timeline",
+        "sha": "7792d90e550f021a26138741eedcc177418f2ae3",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/timeline"
+      },
+      {
+        "name": "treemap",
+        "path": "packages/mermaid/src/diagrams/treemap",
+        "sha": "018a256897a8ad29b9ceacf03ba2f716c48ef6a0",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/treemap"
+      },
+      {
+        "name": "treeView",
+        "path": "packages/mermaid/src/diagrams/treeView",
+        "sha": "4bd428b403c24afd652b7017db53aa0e52589531",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/treeView"
+      },
+      {
+        "name": "user-journey",
+        "path": "packages/mermaid/src/diagrams/user-journey",
+        "sha": "8290ebcbd727d56036ff0ca17c0f4d266374e61f",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/user-journey"
+      },
+      {
+        "name": "venn",
+        "path": "packages/mermaid/src/diagrams/venn",
+        "sha": "b13a4fc2ee0736ac5a50d38de246a4e954caa253",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/venn"
+      },
+      {
+        "name": "wardley",
+        "path": "packages/mermaid/src/diagrams/wardley",
+        "sha": "ad3ca9d6bad24a78fe91e16d9a4652bceb178a9c",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/wardley"
+      },
+      {
+        "name": "xychart",
+        "path": "packages/mermaid/src/diagrams/xychart",
+        "sha": "8ad62f6da9330bdaf764b7968dd1c2e42f69d9e5",
+        "html_url": "https://github.com/mermaid-js/mermaid/tree/2b9d054d622101a727b03c5d47a15f3bd98125fa/packages/mermaid/src/diagrams/xychart"
+      }
+    ]
+  },
+  "snapshotKey": "932f0167d8f8933f12e024ee6353d46b0ac690a40b702fa172e0222474502459"
+}

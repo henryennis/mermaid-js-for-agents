@@ -1,0 +1,1 @@
+Create a readable Mermaid flowchart from a plain-language documentation request.

@@ -1,0 +1,1 @@
+Repair a Mermaid state diagram parse issue while preserving the user's lifecycle semantics.

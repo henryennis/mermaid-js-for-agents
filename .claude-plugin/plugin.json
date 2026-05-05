@@ -1,0 +1,11 @@
+{
+  "name": "mermaid-js-for-agents",
+  "description": "Create and repair Mermaid.js diagrams with portable Agent Skills guidance.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Mermaid.js for Agents contributors"
+  },
+  "homepage": "https://github.com/henryennis/mermaid-js-for-agents",
+  "repository": "https://github.com/henryennis/mermaid-js-for-agents",
+  "license": "MIT"
+}

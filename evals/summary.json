@@ -1,0 +1,13 @@
+{
+  "scenarios": [
+    "flowchart-readme",
+    "repair-broken-sequence",
+    "choose-diagram-type",
+    "renderer-fallback",
+    "er-schema-cardinality",
+    "state-lifecycle-repair",
+    "unsafe-rendering-strict",
+    "parser-validation-advice"
+  ],
+  "notes": "Expanded pre-release scenarios covering creation, repair, renderer fallback, validation honesty, and security-sensitive rendering behavior. Record Tessl scores before public marketplace submission."
+}

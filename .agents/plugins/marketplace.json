@@ -1,0 +1,20 @@
+{
+  "name": "mermaid-js-for-agents-local",
+  "plugins": [
+    {
+      "name": "mermaid-js-for-agents",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "Mermaid.js for Agents"
+      }
+    }
+  ]
+}

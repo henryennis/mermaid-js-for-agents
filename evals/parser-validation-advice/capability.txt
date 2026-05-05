@@ -1,0 +1,1 @@
+Repair a Mermaid syntax issue and give honest parser-validation guidance for the specific generated diagram.

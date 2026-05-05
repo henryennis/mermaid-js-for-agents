@@ -1,0 +1,24 @@
+{
+  "criteria": [
+    {
+      "name": "Uses Mermaid flowchart syntax",
+      "description": "The answer contains a fenced mermaid block whose first meaningful line starts with flowchart or graph.",
+      "weight": 0.35
+    },
+    {
+      "name": "Captures the requested lifecycle",
+      "description": "The diagram includes request, draft, validation, and response or publish stages.",
+      "weight": 0.35
+    },
+    {
+      "name": "Readable and maintainable",
+      "description": "Node IDs and labels are stable, concise, and easy to edit.",
+      "weight": 0.2
+    },
+    {
+      "name": "States assumptions briefly",
+      "description": "The response includes no more than one concise assumptions sentence outside the diagram.",
+      "weight": 0.1
+    }
+  ]
+}

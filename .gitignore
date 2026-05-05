@@ -1,0 +1,14 @@
+node_modules/
+coverage/
+dist/
+.DS_Store
+.env
+.env.*
+!.env.example
+.tessl/tiles/
+.pi/npm/
+.pi/git/
+*.log
+sbom.cdx.json
+.agents/skills/
+.claude/skills/

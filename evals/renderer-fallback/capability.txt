@@ -1,0 +1,1 @@
+Repair a Mermaid diagram request by replacing unsupported beta syntax with a compatible diagram while preserving intent.

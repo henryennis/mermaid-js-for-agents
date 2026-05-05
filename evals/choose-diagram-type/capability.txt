@@ -1,0 +1,1 @@
+Choose an appropriate Mermaid diagram type from the user's communication goal and create a readable diagram.

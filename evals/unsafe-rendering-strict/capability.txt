@@ -1,0 +1,1 @@
+Handle security-sensitive Mermaid requests by preserving the useful diagram while refusing unsafe rendering behavior.

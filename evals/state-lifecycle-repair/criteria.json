@@ -1,0 +1,24 @@
+{
+  "criteria": [
+    {
+      "name": "Keeps state diagram type",
+      "description": "Repairs the diagram as stateDiagram-v2 rather than switching diagram types.",
+      "weight": 0.25
+    },
+    {
+      "name": "Fixes missing transition label colon",
+      "description": "Adds the missing colon before the approve label or otherwise makes that transition valid Mermaid.",
+      "weight": 0.35
+    },
+    {
+      "name": "Preserves lifecycle semantics",
+      "description": "Keeps Draft, In Review, Published, submit, approve, and changes requested semantics.",
+      "weight": 0.25
+    },
+    {
+      "name": "Explains smallest repair",
+      "description": "Explains the minimal syntax change without unrelated rewrites.",
+      "weight": 0.15
+    }
+  ]
+}

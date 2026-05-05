@@ -1,0 +1,8 @@
+node_modules
+coverage
+dist
+.tessl
+.pi/npm
+.pi/git
+.github/workflows/*.lock.yml
+skills/mermaid-diagrams/references/upstream-evidence.md

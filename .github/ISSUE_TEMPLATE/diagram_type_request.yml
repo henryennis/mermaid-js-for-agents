@@ -1,0 +1,24 @@
+name: Diagram guidance request
+description: Request support or better guidance for a Mermaid diagram type.
+title: "feat(skill): improve guidance for "
+labels: [enhancement, mermaid]
+body:
+  - type: input
+    id: diagram_type
+    attributes:
+      label: Mermaid diagram type
+      placeholder: flowchart, sequenceDiagram, architecture-beta, wardley-beta...
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use case
+      description: What should agents be able to create or repair?
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example Mermaid or upstream docs
+      description: Link official Mermaid docs or include safe example syntax.

@@ -1,0 +1,24 @@
+{
+  "criteria": [
+    {
+      "name": "Preserves sequence diagram intent",
+      "description": "The fixed diagram still shows User, Agent, and Renderer with the same request, validation, syntax result, and final response flow.",
+      "weight": 0.35
+    },
+    {
+      "name": "Fixes syntax locally",
+      "description": "The response fixes missing colons or malformed messages without changing to another diagram type.",
+      "weight": 0.35
+    },
+    {
+      "name": "Provides a concise explanation",
+      "description": "The response briefly identifies the repair without a long tutorial.",
+      "weight": 0.2
+    },
+    {
+      "name": "Uses a fenced Mermaid block",
+      "description": "The fixed diagram is returned in a mermaid code fence.",
+      "weight": 0.1
+    }
+  ]
+}

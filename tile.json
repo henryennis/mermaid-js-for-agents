@@ -1,0 +1,19 @@
+{
+  "name": "mermaid-js-for-agents/mermaid-diagrams",
+  "version": "0.1.0",
+  "summary": "Portable Agent Skill, docs, rules, and automation that help AI coding agents create and repair Mermaid.js diagrams while maintainer agents keep the package aligned with upstream Mermaid releases.",
+  "entrypoint": "README.md",
+  "docs": "docs/index.md",
+  "describes": "pkg:npm/mermaid@11.14.0",
+  "private": false,
+  "skills": {
+    "mermaid-diagrams": {
+      "path": "skills/mermaid-diagrams/SKILL.md"
+    }
+  },
+  "steering": {
+    "diagram-quality": {
+      "rules": "rules/diagram-quality.md"
+    }
+  }
+}

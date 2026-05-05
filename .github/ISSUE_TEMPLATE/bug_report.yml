@@ -1,0 +1,34 @@
+name: Bug report
+description: Report a package, skill, or diagram-generation problem.
+title: "bug: "
+labels: [bug]
+body:
+  - type: dropdown
+    id: harness
+    attributes:
+      label: Harness
+      options:
+        - Tessl
+        - Pi
+        - Claude Code
+        - Codex
+        - Generic Agent Skills
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include prompts, Mermaid blocks, commands, or logs when safe.
+  - type: input
+    id: version
+    attributes:
+      label: Package version or commit

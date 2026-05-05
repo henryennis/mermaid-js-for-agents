@@ -1,0 +1,1 @@
+Repair common Mermaid sequence diagram syntax mistakes while preserving intent.
