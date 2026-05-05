@@ -8,9 +8,8 @@ security fixes as patch releases when the package layout remains compatible.
 ## Reporting a vulnerability
 
 Do not file public issues for vulnerabilities. Use GitHub private vulnerability reporting once
-enabled for the public repository. Until a final security contact is configured, treat the package
-as private beta and report vulnerabilities directly to the repository owner through a private
-channel.
+enabled for the public repository. Until that is enabled, treat the package as private beta and
+report vulnerabilities privately to repository owner `@henryennis`.
 
 Expected response targets after public launch:
 

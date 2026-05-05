@@ -1,5 +1,5 @@
 {
-  "name": "mermaid-js-for-agents/mermaid-diagrams",
+  "name": "henryennis/mermaid-js-for-agents",
   "version": "0.1.0",
   "summary": "Portable Agent Skill, docs, rules, and automation that help AI coding agents create and repair Mermaid.js diagrams while maintainer agents keep the package aligned with upstream Mermaid releases.",
   "entrypoint": "README.md",

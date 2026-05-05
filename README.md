@@ -77,18 +77,18 @@ sequenceDiagram
 
 ### Tessl
 
-Update the tile workspace name in `tile.json`, then validate and publish with Tessl:
+Validate and publish from the personal `henryennis` Tessl workspace:
 
 ```bash
 tessl skill lint .
 tessl skill review .
-tessl skill publish . --workspace <your-workspace>
+tessl skill publish . --workspace henryennis
 ```
 
 For quality measurement, generate scenarios and run evals:
 
 ```bash
-tessl scenario generate . --count=5 --workspace=<your-workspace>
+tessl scenario generate . --count=5 --workspace=henryennis
 tessl scenario download --last
 tessl eval run .
 ```
@@ -163,12 +163,14 @@ flowchart LR
 1. Add a Changeset for user-visible package changes.
 2. Run `npm run check`.
 3. Merge to `main`.
-4. The release workflow opens a version PR or publishes when `NPM_TOKEN` is configured.
-5. Publish the Tessl tile from the same version after replacing placeholder workspace metadata.
+4. Npm publishing is deferred for now; keep release publishing gated until registry launch.
+5. Publish the Tessl tile from the same version from the `henryennis` workspace once Tessl
+   validation passes.
 
 ## Project status
 
 This project starts at `0.1.0` as a private beta / pre-release candidate: the package format, skill
 router, references, automation source, parser-backed validation, and evals are in place. Before a
-public registry launch, choose the final npm scope, Tessl workspace, GitHub repository owner,
-maintainer policy, and compile/configure the GitHub Agentic Workflow artifact.
+public registry launch, finish Tessl CLI validation, enable GitHub private vulnerability reporting,
+confirm npm publishing credentials or trusted publishing, and compile/configure the GitHub Agentic
+Workflow artifact.
