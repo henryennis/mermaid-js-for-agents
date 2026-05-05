@@ -1,0 +1,2 @@
+Create a Mermaid class diagram that represents a small package/domain model with clear classes,
+attributes, and relationships.

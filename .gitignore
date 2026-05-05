@@ -10,5 +10,6 @@ dist/
 .pi/git/
 *.log
 sbom.cdx.json
+gauntlet-runs/
 .agents/skills/
 .claude/skills/

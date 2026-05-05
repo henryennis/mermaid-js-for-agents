@@ -35,6 +35,9 @@ The eval discovery updater reads upstream evidence, the coverage matrix, and eva
 updates `data/eval-opportunities.json` and `docs/eval-backlog.md` so maintainers can start from a
 ranked create/repair fitness backlog instead of inventing work from scratch.
 
+For local skill-only consumer runs, use `docs/gauntlet.md`. The gauntlet uses Pi subagents and the
+existing Mermaid parser validator; Ralph/Wiggum remains an optional loop wrapper, not an agent role.
+
 ## Semantic maintainer-agent loop
 
 Some changes require judgment. Examples:

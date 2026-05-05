@@ -30,5 +30,5 @@ GitHub Agentic Workflows provide the semantic maintenance layer: maintainer agen
 changes and repository feedback, then propose skill/reference/eval updates that improve Mermaid
 creation and repair.
 
-See `docs/maintenance.md`, `docs/agentic-workflows.md`, and `docs/eval-driven-maintenance-plan.md`
-for details.
+See `docs/maintenance.md`, `docs/agentic-workflows.md`, `docs/eval-driven-maintenance-plan.md`, and
+`docs/gauntlet.md` for details.

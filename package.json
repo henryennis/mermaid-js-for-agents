@@ -38,6 +38,7 @@
     ".claude-plugin/",
     ".codex-plugin/",
     ".agents/plugins/marketplace.json",
+    ".pi/",
     ".github/agents/",
     ".github/workflows/mermaid-skill-maintenance.md",
     "README.md",

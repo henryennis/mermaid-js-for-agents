@@ -4,8 +4,8 @@
     "upstreamSnapshotKey": "932f0167d8f8933f12e024ee6353d46b0ac690a40b702fa172e0222474502459",
     "upstreamRelease": "mermaid@11.14.0",
     "diagramDirectories": 27,
-    "evalScenarios": 8,
-    "evalScenariosWithMetadata": 8
+    "evalScenarios": 9,
+    "evalScenariosWithMetadata": 9
   },
   "opportunities": [
     {
@@ -25,15 +25,6 @@
       "gap": "Supported Mermaid C4 diagrams have no repair eval coverage.",
       "evidence": ["upstream:c4", "coverage:supported", "evals:no-c4-repair"],
       "next": "Add one repair scenario with a realistic C4 syntax mistake and criteria that preserve user intent."
-    },
-    {
-      "id": "class-create-coverage",
-      "priority": "P1",
-      "diagramTypes": ["class"],
-      "modes": ["create"],
-      "gap": "Supported Mermaid Class diagrams have no create eval coverage.",
-      "evidence": ["upstream:class", "coverage:supported", "evals:no-class-create"],
-      "next": "Add one create scenario that asks for a Class diagram in its natural use case and checks semantic essentials."
     },
     {
       "id": "class-repair-coverage",

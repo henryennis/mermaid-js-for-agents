@@ -8,10 +8,10 @@ eval metadata, update coverage guidance, or refresh upstream evidence instead.
 - Upstream snapshot: 932f0167d8f8933f12e024ee6353d46b0ac690a40b702fa172e0222474502459
 - Tracked Mermaid release: mermaid@11.14.0
 - Diagram source directories: 27
-- Eval scenarios: 8
-- Eval scenarios with metadata: 8
-- Opportunities: 36
-- Counts by priority: P0 0, P1 25, P2 11, P3 0
+- Eval scenarios: 9
+- Eval scenarios with metadata: 9
+- Opportunities: 35
+- Counts by priority: P0 0, P1 24, P2 11, P3 0
 
 ## P1
 
@@ -32,15 +32,6 @@ eval metadata, update coverage guidance, or refresh upstream evidence instead.
 - **Evidence:** upstream:c4, coverage:supported, evals:no-c4-repair
 - **Next:** Add one repair scenario with a realistic C4 syntax mistake and criteria that preserve
   user intent.
-
-### class-create-coverage
-
-- **Gap:** Supported Mermaid Class diagrams have no create eval coverage.
-- **Diagram type(s):** class
-- **Mode(s):** create
-- **Evidence:** upstream:class, coverage:supported, evals:no-class-create
-- **Next:** Add one create scenario that asks for a Class diagram in its natural use case and checks
-  semantic essentials.
 
 ### class-repair-coverage
 

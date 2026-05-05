@@ -14,7 +14,8 @@ Before public marketplace submission, run Tessl evals and record results. Target
 
 ## Scenario groups
 
-- Creation: `flowchart-readme`, `choose-diagram-type`, `er-schema-cardinality`.
+- Creation: `flowchart-readme`, `choose-diagram-type`, `er-schema-cardinality`,
+  `class-package-model`.
 - Repair: `repair-broken-sequence`, `state-lifecycle-repair`, `parser-validation-advice`.
 - Renderer compatibility: `renderer-fallback`.
 - Security: `unsafe-rendering-strict`.
