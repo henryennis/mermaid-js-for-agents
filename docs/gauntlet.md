@@ -27,6 +27,24 @@ gauntlet-runs/<run-id>/
   manifest.json
 ```
 
+## Weak-model lane
+
+Use a cheap, ordinary model for the skill-only consumer so the gauntlet measures what the skill adds
+instead of what a frontier model already knows. In this repository's local Pi setup, the intended
+weak lane is `deepseek-v4-flash`.
+
+Do not hard-code this model into the packaged agent definition until the provider is proven in the
+runner where it will execute. For local runs, either configure Pi's default model/provider to
+DeepSeek v4 flash or pass the model explicitly:
+
+```text
+/run mermaid-skill-only-consumer[model=deepseek-v4-flash,output=gauntlet-runs/<run-id>/answer.md] @gauntlet-runs/<run-id>/task.md
+```
+
+If `deepseek-v4-flash` is unavailable, use another low-cost OpenAI-compatible model and record the
+exact model ID in `manifest.json` and the PR summary. Judges and maintainers may use stronger models
+because their job is semantic evaluation and durable synthesis, not measuring the skill-only floor.
+
 ## Manual Pi procedure
 
 1. Pick one scenario from `docs/eval-backlog.md` or an existing `evals/<scenario>/` directory.
@@ -62,6 +80,8 @@ gauntlet-runs/<run-id>/
 
 - The consumer agent uses `inheritProjectContext: false`, `inheritSkills: false`,
   `defaultContext: fresh`, `maxSubagentDepth: 0`, and only the harmless `contact_supervisor` tool.
+- The intended weak consumer model is `deepseek-v4-flash` when available; model identity must be
+  recorded with gauntlet evidence.
 - The judge is read/bash only and review-only by prompt.
 - Local run artifacts stay outside git by default.
 
@@ -81,3 +101,13 @@ item.
 
 The local run artifacts are gitignored. This repository commits the scenario, agent definitions, and
 run procedure; PRs should summarize local run evidence when it matters for review.
+
+## DeepSeek v4 flash smoke
+
+A local smoke run confirmed that `mermaid-skill-only-consumer` can execute with
+`model=deepseek-v4-flash` and produce a parser-valid sequence diagram. The run used
+`gauntlet-runs/deepseek-v4-flash-smoke/` and parser validation returned:
+
+```text
+Mermaid example validation passed (1 example, parser enabled).
+```

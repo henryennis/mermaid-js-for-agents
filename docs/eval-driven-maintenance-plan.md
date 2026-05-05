@@ -279,10 +279,14 @@ Keep the model policy boring:
 - deterministic tools for parser and packaging checks;
 - fallback to the default GitHub-hosted model until any custom provider is proven.
 
-DeepSeek V4 Pro or Flash is a good candidate because the public API is OpenAI/Anthropic compatible,
-supports tool calls and streaming, and is cost-attractive for repeated maintenance loops. Treat it
-as a candidate provider, not a product dependency. Validate it manually before making it the
-scheduled default.
+DeepSeek v4 flash is the intended weak-model lane for local Pi gauntlets when available: it is
+cost-attractive for repeated skill-only attempts and weak enough that failures expose missing skill
+guidance. Treat it as runner configuration, not a product dependency. Record the exact model ID in
+run manifests and PR summaries, and keep a fallback low-cost OpenAI-compatible model available until
+DeepSeek is proven in the scheduled runner.
+
+Use stronger models only for judging difficult semantics or maintainer synthesis. The point is not
+to make the weak consumer clever; the point is to reveal where the skill is not yet teaching enough.
 
 ## Phased implementation
 

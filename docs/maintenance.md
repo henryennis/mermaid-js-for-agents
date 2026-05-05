@@ -37,6 +37,8 @@ ranked create/repair fitness backlog instead of inventing work from scratch.
 
 For local skill-only consumer runs, use `docs/gauntlet.md`. The gauntlet uses Pi subagents and the
 existing Mermaid parser validator; Ralph/Wiggum remains an optional loop wrapper, not an agent role.
+The intended weak consumer lane is `deepseek-v4-flash` when available, with exact model identity
+recorded in run evidence.
 
 ## Semantic maintainer-agent loop
 
