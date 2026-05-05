@@ -20,5 +20,12 @@
       "description": "The fixed diagram is returned in a mermaid code fence.",
       "weight": 0.1
     }
-  ]
+  ],
+  "metadata": {
+    "diagramTypes": ["sequence"],
+    "modes": ["repair"],
+    "riskAreas": ["syntax", "semantics"],
+    "rendererTargets": ["markdown"],
+    "difficulty": "foundational"
+  }
 }

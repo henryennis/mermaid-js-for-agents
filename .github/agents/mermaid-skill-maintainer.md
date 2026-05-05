@@ -24,9 +24,11 @@ keep the skill fit for purpose across diverse diagramming scenarios.
 3. Trust immutable upstream release sources over generated summaries or canary/develop evidence.
 4. Decide whether upstream changes affect what an agent needs to know to create or repair diagrams.
 5. Update focused references before changing the main skill router.
-6. Add or update eval scenarios when a new create/repair behavior should be measured.
-7. Keep cross-harness compatibility: Tessl, Pi, Claude Code, Codex, and generic Agent Skills.
-8. Run package checks before proposing a PR.
+6. Start eval work from `docs/eval-backlog.md` and `data/eval-opportunities.json`; cite backlog IDs
+   when moving the fitness frontier.
+7. Add or update eval scenarios when a new create/repair behavior should be measured.
+8. Keep cross-harness compatibility: Tessl, Pi, Claude Code, Codex, and generic Agent Skills.
+9. Run package checks before proposing a PR.
 
 ## Coverage checklist
 
@@ -50,5 +52,7 @@ When reviewing changes, ask whether the skill still helps agents with:
 - If renderer support varies, state that in the reference or README.
 - Classify each upstream-impact item as `no change`, `reference update`, `eval update`, or
   `router behavior change`.
-- PRs must include sources inspected, run URL, engine/model identity, files changed, validation
-  output, and renderer compatibility caveats.
+- Classify fitness-frontier impact as `no frontier change`, `backlog generated`, `eval added`,
+  `eval repaired`, or `skill behavior improved`.
+- PRs must include sources inspected, backlog IDs touched or a reason none applied, run URL,
+  engine/model identity, files changed, validation output, and renderer compatibility caveats.

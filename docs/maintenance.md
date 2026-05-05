@@ -12,15 +12,16 @@ deterministic upstream tracking from semantic maintainer-agent review.
 - The canonical agent-facing router lives in the Agent Skill.
 - Detailed guidance lives in focused reference files loaded on demand.
 
-## Deterministic updater
+## Deterministic updaters
 
 Run:
 
 ```bash
 npm run generate
+npm run discover:evals
 ```
 
-The updater records:
+The upstream evidence updater records:
 
 - latest stable Mermaid release tag, date, and commit;
 - release highlights extracted from the release body;
@@ -29,6 +30,10 @@ The updater records:
 
 It updates the generated upstream evidence reference and a machine-readable JSON snapshot. This
 gives maintainers a small diff to review when Mermaid changes.
+
+The eval discovery updater reads upstream evidence, the coverage matrix, and eval metadata. It
+updates `data/eval-opportunities.json` and `docs/eval-backlog.md` so maintainers can start from a
+ranked create/repair fitness backlog instead of inventing work from scratch.
 
 ## Semantic maintainer-agent loop
 
@@ -40,8 +45,10 @@ Some changes require judgment. Examples:
 - A security or rendering note changes how agents should respond.
 
 For those changes, use the GitHub Agentic Workflow. The maintainer agent reviews the deterministic
-diff, inspects upstream context and repository feedback, decides whether agents need new
-create/repair guidance, edits references or evals, runs validation, and proposes a PR.
+diff and `docs/eval-backlog.md`, inspects upstream context and repository feedback, decides whether
+agents need new create/repair guidance, edits references or evals, runs validation, and proposes a
+PR. Meaningful PRs should cite the eval opportunity IDs they address or explain why no backlog item
+applies.
 
 ## Validation gates
 
@@ -49,6 +56,7 @@ Before merging maintenance changes:
 
 ```bash
 npm run check
+npm run discover:evals:check
 npm run validate:mermaid
 npm run smoke:pack
 ```

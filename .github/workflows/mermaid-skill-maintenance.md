@@ -18,7 +18,15 @@ tools:
     toolsets: [repos, pull_requests, issues]
   edit:
   bash:
-    ["npm ci", "npm run generate", "npm run check", "npm run smoke:pack", "git diff", "git status"]
+    [
+      "npm ci",
+      "npm run generate",
+      "npm run discover:evals",
+      "npm run check",
+      "npm run smoke:pack",
+      "git diff",
+      "git status"
+    ]
   web-fetch:
 network:
   allowed:
@@ -48,16 +56,17 @@ and repair Mermaid.js diagrams.
    reference.
 3. Run `npm ci` if dependencies are not installed.
 4. Run `npm run generate` to refresh deterministic upstream Mermaid metadata.
-5. Inspect `git diff` and recent repository issues or pull requests relevant to Mermaid diagram
-   creation or repair.
-6. Classify each relevant upstream change as `no change`, `reference update`, `eval update`, or
-   `router behavior change`.
-7. Decide whether the skill still covers what coding agents need to know for creation and repair
+5. Run `npm run discover:evals` to refresh the eval opportunity backlog.
+6. Read `docs/eval-backlog.md` and inspect recent repository issues or pull requests relevant to
+   Mermaid diagram creation or repair.
+7. Classify each relevant upstream or backlog item as `no change`, `reference update`,
+   `eval update`, or `router behavior change`.
+8. Decide whether the skill still covers what coding agents need to know for creation and repair
    scenarios.
-8. Prefer edits in focused reference files over edits in the main skill router.
-9. Add or update eval scenarios when a create/repair behavior should be measured.
-10. Run `npm run check`.
-11. Prepare a concise PR with what changed, why it matters, and validation output.
+9. Prefer edits in focused reference files over edits in the main skill router.
+10. Add or update eval scenarios when a create/repair behavior should be measured.
+11. Run `npm run check`.
+12. Prepare a concise PR with what changed, why it matters, and validation output.
 
 ## Output contract
 
@@ -67,6 +76,9 @@ Request one pull request only when there is a meaningful diff. The PR body must 
 - Workflow run URL and engine/model identity.
 - Impact classification: `no change`, `reference update`, `eval update`, or
   `router behavior change`.
+- Fitness frontier classification: `no frontier change`, `backlog generated`, `eval added`,
+  `eval repaired`, or `skill behavior improved`.
+- Eval opportunity backlog IDs touched, or a reason no backlog item applied.
 - How the change improves diagram creation or repair.
 - Files changed.
 - Validation output from `npm run check` and `npm run smoke:pack`.

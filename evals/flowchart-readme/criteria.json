@@ -20,5 +20,12 @@
       "description": "The response includes no more than one concise assumptions sentence outside the diagram.",
       "weight": 0.1
     }
-  ]
+  ],
+  "metadata": {
+    "diagramTypes": ["flowchart"],
+    "modes": ["create"],
+    "riskAreas": ["syntax", "semantics"],
+    "rendererTargets": ["markdown"],
+    "difficulty": "foundational"
+  }
 }

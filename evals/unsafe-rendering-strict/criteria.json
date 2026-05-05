@@ -20,5 +20,12 @@
       "description": "Suggests documenting links/actions outside the diagram or using trusted renderer controls instead.",
       "weight": 0.15
     }
-  ]
+  ],
+  "metadata": {
+    "diagramTypes": ["flowchart"],
+    "modes": ["create", "safety"],
+    "riskAreas": ["security", "renderer support"],
+    "rendererTargets": ["strict-security"],
+    "difficulty": "intermediate"
+  }
 }

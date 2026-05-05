@@ -20,5 +20,12 @@
       "description": "Briefly states that the fallback favors renderer compatibility while preserving the architecture idea.",
       "weight": 0.15
     }
-  ]
+  ],
+  "metadata": {
+    "diagramTypes": ["architecture", "flowchart"],
+    "modes": ["repair", "caveat"],
+    "riskAreas": ["renderer support", "beta syntax", "semantics"],
+    "rendererTargets": ["github-markdown", "generic-markdown"],
+    "difficulty": "intermediate"
+  }
 }

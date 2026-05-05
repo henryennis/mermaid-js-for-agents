@@ -20,5 +20,12 @@
       "description": "Briefly explains that the colon after the arrow target was missing.",
       "weight": 0.2
     }
-  ]
+  ],
+  "metadata": {
+    "diagramTypes": ["sequence"],
+    "modes": ["repair", "validate"],
+    "riskAreas": ["syntax", "overclaiming"],
+    "rendererTargets": ["parser"],
+    "difficulty": "intermediate"
+  }
 }

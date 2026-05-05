@@ -20,5 +20,12 @@
       "description": "Briefly states any assumptions without inventing unnecessary fields.",
       "weight": 0.2
     }
-  ]
+  ],
+  "metadata": {
+    "diagramTypes": ["er"],
+    "modes": ["create"],
+    "riskAreas": ["semantics"],
+    "rendererTargets": ["markdown"],
+    "difficulty": "intermediate"
+  }
 }

@@ -20,5 +20,12 @@
       "description": "Explains the minimal syntax change without unrelated rewrites.",
       "weight": 0.15
     }
-  ]
+  ],
+  "metadata": {
+    "diagramTypes": ["state"],
+    "modes": ["repair"],
+    "riskAreas": ["syntax", "semantics"],
+    "rendererTargets": ["markdown"],
+    "difficulty": "intermediate"
+  }
 }

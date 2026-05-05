@@ -20,5 +20,12 @@
       "description": "Includes one concise sentence explaining why the chosen diagram type fits the request.",
       "weight": 0.2
     }
-  ]
+  ],
+  "metadata": {
+    "diagramTypes": ["flowchart"],
+    "modes": ["choose", "create"],
+    "riskAreas": ["semantics"],
+    "rendererTargets": ["markdown"],
+    "difficulty": "intermediate"
+  }
 }

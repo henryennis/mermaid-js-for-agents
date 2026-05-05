@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": {
+    "upstreamSnapshotKey": "932f0167d8f8933f12e024ee6353d46b0ac690a40b702fa172e0222474502459",
+    "upstreamRelease": "mermaid@11.14.0",
+    "diagramDirectories": 27,
+    "evalScenarios": 8,
+    "evalScenariosWithMetadata": 8
+  },
+  "opportunities": [
+    {
+      "id": "c4-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["c4"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid C4 diagrams have no create eval coverage.",
+      "evidence": ["upstream:c4", "coverage:supported", "evals:no-c4-create"],
+      "next": "Add one create scenario that asks for a C4 diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "c4-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["c4"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid C4 diagrams have no repair eval coverage.",
+      "evidence": ["upstream:c4", "coverage:supported", "evals:no-c4-repair"],
+      "next": "Add one repair scenario with a realistic C4 syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "class-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["class"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid Class diagrams have no create eval coverage.",
+      "evidence": ["upstream:class", "coverage:supported", "evals:no-class-create"],
+      "next": "Add one create scenario that asks for a Class diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "class-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["class"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid Class diagrams have no repair eval coverage.",
+      "evidence": ["upstream:class", "coverage:supported", "evals:no-class-repair"],
+      "next": "Add one repair scenario with a realistic Class syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "er-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["er"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid ER diagrams have no repair eval coverage.",
+      "evidence": ["upstream:er", "coverage:supported", "evals:no-er-repair"],
+      "next": "Add one repair scenario with a realistic ER syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "gantt-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["gantt"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid Gantt diagrams have no create eval coverage.",
+      "evidence": ["upstream:gantt", "coverage:supported", "evals:no-gantt-create"],
+      "next": "Add one create scenario that asks for a Gantt diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "gantt-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["gantt"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid Gantt diagrams have no repair eval coverage.",
+      "evidence": ["upstream:gantt", "coverage:supported", "evals:no-gantt-repair"],
+      "next": "Add one repair scenario with a realistic Gantt syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "git-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["git"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid Git graph diagrams have no create eval coverage.",
+      "evidence": ["upstream:git", "coverage:supported", "evals:no-git-create"],
+      "next": "Add one create scenario that asks for a Git graph diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "git-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["git"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid Git graph diagrams have no repair eval coverage.",
+      "evidence": ["upstream:git", "coverage:supported", "evals:no-git-repair"],
+      "next": "Add one repair scenario with a realistic Git graph syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "kanban-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["kanban"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid Kanban diagrams have no create eval coverage.",
+      "evidence": ["upstream:kanban", "coverage:supported", "evals:no-kanban-create"],
+      "next": "Add one create scenario that asks for a Kanban diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "kanban-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["kanban"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid Kanban diagrams have no repair eval coverage.",
+      "evidence": ["upstream:kanban", "coverage:supported", "evals:no-kanban-repair"],
+      "next": "Add one repair scenario with a realistic Kanban syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "mindmap-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["mindmap"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid Mindmap diagrams have no create eval coverage.",
+      "evidence": ["upstream:mindmap", "coverage:supported", "evals:no-mindmap-create"],
+      "next": "Add one create scenario that asks for a Mindmap diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "mindmap-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["mindmap"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid Mindmap diagrams have no repair eval coverage.",
+      "evidence": ["upstream:mindmap", "coverage:supported", "evals:no-mindmap-repair"],
+      "next": "Add one repair scenario with a realistic Mindmap syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "pie-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["pie"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid Pie diagrams have no create eval coverage.",
+      "evidence": ["upstream:pie", "coverage:supported", "evals:no-pie-create"],
+      "next": "Add one create scenario that asks for a Pie diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "pie-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["pie"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid Pie diagrams have no repair eval coverage.",
+      "evidence": ["upstream:pie", "coverage:supported", "evals:no-pie-repair"],
+      "next": "Add one repair scenario with a realistic Pie syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "quadrant-chart-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["quadrant-chart"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid Quadrant Chart diagrams have no create eval coverage.",
+      "evidence": [
+        "upstream:quadrant-chart",
+        "coverage:supported",
+        "evals:no-quadrant-chart-create"
+      ],
+      "next": "Add one create scenario that asks for a Quadrant Chart diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "quadrant-chart-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["quadrant-chart"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid Quadrant Chart diagrams have no repair eval coverage.",
+      "evidence": [
+        "upstream:quadrant-chart",
+        "coverage:supported",
+        "evals:no-quadrant-chart-repair"
+      ],
+      "next": "Add one repair scenario with a realistic Quadrant Chart syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "requirement-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["requirement"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid Requirement diagrams have no create eval coverage.",
+      "evidence": ["upstream:requirement", "coverage:supported", "evals:no-requirement-create"],
+      "next": "Add one create scenario that asks for a Requirement diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "requirement-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["requirement"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid Requirement diagrams have no repair eval coverage.",
+      "evidence": ["upstream:requirement", "coverage:supported", "evals:no-requirement-repair"],
+      "next": "Add one repair scenario with a realistic Requirement syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "sequence-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["sequence"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid Sequence diagrams have no create eval coverage.",
+      "evidence": [
+        "upstream:sequence",
+        "coverage:supported",
+        "evals:no-sequence-create",
+        "release-highlight:sequence"
+      ],
+      "next": "Add one create scenario that asks for a Sequence diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "state-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["state"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid State diagrams have no create eval coverage.",
+      "evidence": [
+        "upstream:state",
+        "coverage:supported",
+        "evals:no-state-create",
+        "release-highlight:state"
+      ],
+      "next": "Add one create scenario that asks for a State diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "timeline-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["timeline"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid Timeline diagrams have no create eval coverage.",
+      "evidence": [
+        "upstream:timeline",
+        "coverage:supported",
+        "evals:no-timeline-create",
+        "release-highlight:timeline"
+      ],
+      "next": "Add one create scenario that asks for a Timeline diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "timeline-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["timeline"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid Timeline diagrams have no repair eval coverage.",
+      "evidence": [
+        "upstream:timeline",
+        "coverage:supported",
+        "evals:no-timeline-repair",
+        "release-highlight:timeline"
+      ],
+      "next": "Add one repair scenario with a realistic Timeline syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "user-journey-create-coverage",
+      "priority": "P1",
+      "diagramTypes": ["user-journey"],
+      "modes": ["create"],
+      "gap": "Supported Mermaid User Journey diagrams have no create eval coverage.",
+      "evidence": ["upstream:user-journey", "coverage:supported", "evals:no-user-journey-create"],
+      "next": "Add one create scenario that asks for a User Journey diagram in its natural use case and checks semantic essentials."
+    },
+    {
+      "id": "user-journey-repair-coverage",
+      "priority": "P1",
+      "diagramTypes": ["user-journey"],
+      "modes": ["repair"],
+      "gap": "Supported Mermaid User Journey diagrams have no repair eval coverage.",
+      "evidence": ["upstream:user-journey", "coverage:supported", "evals:no-user-journey-repair"],
+      "next": "Add one repair scenario with a realistic User Journey syntax mistake and criteria that preserve user intent."
+    },
+    {
+      "id": "block-beta-caveat-coverage",
+      "priority": "P2",
+      "diagramTypes": ["block"],
+      "modes": ["caveat"],
+      "gap": "Beta Mermaid Block syntax lacks eval coverage for renderer caveats or stable fallbacks.",
+      "evidence": ["upstream:block", "coverage:beta", "evals:no-block-caveat"],
+      "next": "Add one caveat or fallback scenario for Block that makes renderer support explicit before using beta syntax."
+    },
+    {
+      "id": "info-syntax-research",
+      "priority": "P2",
+      "diagramTypes": ["info"],
+      "modes": ["caveat"],
+      "gap": "Upstream Mermaid has Info source, but local guidance still says needs research.",
+      "evidence": ["upstream:info", "coverage:needs-research"],
+      "next": "Research parser-verified Info starter syntax, then add guidance or an eval only if the skill should support it."
+    },
+    {
+      "id": "ishikawa-syntax-research",
+      "priority": "P2",
+      "diagramTypes": ["ishikawa"],
+      "modes": ["caveat"],
+      "gap": "Upstream Mermaid has Ishikawa source, but local guidance still says needs research.",
+      "evidence": ["upstream:ishikawa", "coverage:needs-research"],
+      "next": "Research parser-verified Ishikawa starter syntax, then add guidance or an eval only if the skill should support it."
+    },
+    {
+      "id": "packet-beta-caveat-coverage",
+      "priority": "P2",
+      "diagramTypes": ["packet"],
+      "modes": ["caveat"],
+      "gap": "Beta Mermaid Packet syntax lacks eval coverage for renderer caveats or stable fallbacks.",
+      "evidence": ["upstream:packet", "coverage:beta", "evals:no-packet-caveat"],
+      "next": "Add one caveat or fallback scenario for Packet that makes renderer support explicit before using beta syntax."
+    },
+    {
+      "id": "radar-beta-caveat-coverage",
+      "priority": "P2",
+      "diagramTypes": ["radar"],
+      "modes": ["caveat"],
+      "gap": "Beta Mermaid Radar syntax lacks eval coverage for renderer caveats or stable fallbacks.",
+      "evidence": ["upstream:radar", "coverage:beta", "evals:no-radar-caveat"],
+      "next": "Add one caveat or fallback scenario for Radar that makes renderer support explicit before using beta syntax."
+    },
+    {
+      "id": "sankey-beta-caveat-coverage",
+      "priority": "P2",
+      "diagramTypes": ["sankey"],
+      "modes": ["caveat"],
+      "gap": "Beta Mermaid Sankey syntax lacks eval coverage for renderer caveats or stable fallbacks.",
+      "evidence": ["upstream:sankey", "coverage:beta", "evals:no-sankey-caveat"],
+      "next": "Add one caveat or fallback scenario for Sankey that makes renderer support explicit before using beta syntax."
+    },
+    {
+      "id": "tree-view-beta-caveat-coverage",
+      "priority": "P2",
+      "diagramTypes": ["treeView"],
+      "modes": ["caveat"],
+      "gap": "Beta Mermaid TreeView syntax lacks eval coverage for renderer caveats or stable fallbacks.",
+      "evidence": [
+        "upstream:treeView",
+        "coverage:beta",
+        "evals:no-tree-view-caveat",
+        "release-highlight:tree-view"
+      ],
+      "next": "Add one caveat or fallback scenario for TreeView that makes renderer support explicit before using beta syntax."
+    },
+    {
+      "id": "treemap-beta-caveat-coverage",
+      "priority": "P2",
+      "diagramTypes": ["treemap"],
+      "modes": ["caveat"],
+      "gap": "Beta Mermaid Treemap syntax lacks eval coverage for renderer caveats or stable fallbacks.",
+      "evidence": ["upstream:treemap", "coverage:beta", "evals:no-treemap-caveat"],
+      "next": "Add one caveat or fallback scenario for Treemap that makes renderer support explicit before using beta syntax."
+    },
+    {
+      "id": "venn-syntax-research",
+      "priority": "P2",
+      "diagramTypes": ["venn"],
+      "modes": ["caveat"],
+      "gap": "Upstream Mermaid has Venn source, but local guidance still says needs research.",
+      "evidence": ["upstream:venn", "coverage:needs-research"],
+      "next": "Research parser-verified Venn starter syntax, then add guidance or an eval only if the skill should support it."
+    },
+    {
+      "id": "wardley-beta-caveat-coverage",
+      "priority": "P2",
+      "diagramTypes": ["wardley"],
+      "modes": ["caveat"],
+      "gap": "Beta Mermaid Wardley syntax lacks eval coverage for renderer caveats or stable fallbacks.",
+      "evidence": [
+        "upstream:wardley",
+        "coverage:beta",
+        "evals:no-wardley-caveat",
+        "release-highlight:wardley"
+      ],
+      "next": "Add one caveat or fallback scenario for Wardley that makes renderer support explicit before using beta syntax."
+    },
+    {
+      "id": "xychart-beta-caveat-coverage",
+      "priority": "P2",
+      "diagramTypes": ["xychart"],
+      "modes": ["caveat"],
+      "gap": "Beta Mermaid XY chart syntax lacks eval coverage for renderer caveats or stable fallbacks.",
+      "evidence": ["upstream:xychart", "coverage:beta", "evals:no-xychart-caveat"],
+      "next": "Add one caveat or fallback scenario for XY chart that makes renderer support explicit before using beta syntax."
+    }
+  ]
+}
