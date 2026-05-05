@@ -1,29 +1,31 @@
 {
-  "criteria": [
+  "context": "Tests whether the Mermaid diagrams skill helps an agent complete the gantt-release-plan scenario while following diagram type, syntax, semantic, renderer, safety, and claim-discipline guidance relevant to the task.",
+  "type": "weighted_checklist",
+  "checklist": [
     {
       "name": "Uses Gantt syntax",
       "description": "Uses Mermaid gantt syntax rather than a flowchart or timeline.",
-      "weight": 0.2
+      "max_score": 20
     },
     {
       "name": "Includes schedule essentials",
       "description": "Includes the project start date, design review, implementation, QA, documentation, and release milestone.",
-      "weight": 0.25
+      "max_score": 25
     },
     {
       "name": "Models dependencies",
       "description": "Shows implementation after design review, QA after implementation, documentation after implementation, and release after both QA and documentation are complete or clearly notes the limiting dependency.",
-      "weight": 0.25
+      "max_score": 25
     },
     {
       "name": "Uses readable organization",
       "description": "Uses sections, concise task labels, and Mermaid-friendly dates/durations.",
-      "weight": 0.15
+      "max_score": 15
     },
     {
       "name": "Assumptions note",
       "description": "Includes one short assumptions sentence outside the diagram.",
-      "weight": 0.15
+      "max_score": 15
     }
   ],
   "metadata": {

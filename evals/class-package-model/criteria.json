@@ -1,29 +1,31 @@
 {
-  "criteria": [
+  "context": "Tests whether the Mermaid diagrams skill helps an agent complete the class-package-model scenario while following diagram type, syntax, semantic, renderer, safety, and claim-discipline guidance relevant to the task.",
+  "type": "weighted_checklist",
+  "checklist": [
     {
       "name": "Uses class diagram syntax",
       "description": "Uses Mermaid classDiagram syntax rather than an ER diagram or flowchart.",
-      "weight": 0.25
+      "max_score": 25
     },
     {
       "name": "Models all requested classes",
       "description": "Includes Skill, ReferenceFile, EvalScenario, HarnessAdapter, and Package as classes or clearly equivalent class names.",
-      "weight": 0.25
+      "max_score": 25
     },
     {
       "name": "Shows required relationships",
       "description": "Represents Skill-to-ReferenceFile as one-to-many loading, EvalScenario-to-Skill as exactly one tested skill, HarnessAdapter-to-Skill as exposure, and Package ownership of one Skill plus many HarnessAdapters.",
-      "weight": 0.3
+      "max_score": 30
     },
     {
       "name": "Includes useful class details",
       "description": "Includes concise attributes such as name, description, path, platform, or id without inventing excessive fields.",
-      "weight": 0.1
+      "max_score": 10
     },
     {
       "name": "Assumptions note",
       "description": "Includes one brief assumptions sentence outside the diagram.",
-      "weight": 0.1
+      "max_score": 10
     }
   ],
   "metadata": {

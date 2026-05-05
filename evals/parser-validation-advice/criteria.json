@@ -1,24 +1,26 @@
 {
-  "criteria": [
+  "context": "Tests whether the Mermaid diagrams skill helps an agent complete the parser-validation-advice scenario while following diagram type, syntax, semantic, renderer, safety, and claim-discipline guidance relevant to the task.",
+  "type": "weighted_checklist",
+  "checklist": [
     {
       "name": "Repairs missing message colon",
       "description": "Changes the first sequence message to valid Mermaid syntax while preserving intent.",
-      "weight": 0.3
+      "max_score": 30
     },
     {
       "name": "Does not overclaim validation",
       "description": "Does not claim the diagram is parser-valid unless it also gives a concrete validation command.",
-      "weight": 0.2
+      "max_score": 20
     },
     {
       "name": "Includes specific parser command",
       "description": "Includes either --stdin --parse or --file <path> --parse for scripts/validate-mermaid-examples.mjs.",
-      "weight": 0.3
+      "max_score": 30
     },
     {
       "name": "Explains smallest repair",
       "description": "Briefly explains that the colon after the arrow target was missing.",
-      "weight": 0.2
+      "max_score": 20
     }
   ],
   "metadata": {

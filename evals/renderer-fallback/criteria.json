@@ -1,24 +1,26 @@
 {
-  "criteria": [
+  "context": "Tests whether the Mermaid diagrams skill helps an agent complete the renderer-fallback scenario while following diagram type, syntax, semantic, renderer, safety, and claim-discipline guidance relevant to the task.",
+  "type": "weighted_checklist",
+  "checklist": [
     {
       "name": "Avoids unsupported beta syntax",
       "description": "Does not use architecture-beta in the repaired output.",
-      "weight": 0.3
+      "max_score": 30
     },
     {
       "name": "Preserves topology intent",
       "description": "Shows Agent, Mermaid skill package, and Renderer with meaningful relationships.",
-      "weight": 0.3
+      "max_score": 30
     },
     {
       "name": "Uses broadly compatible Mermaid",
       "description": "Uses a stable diagram type such as flowchart for Markdown renderer compatibility.",
-      "weight": 0.25
+      "max_score": 25
     },
     {
       "name": "Explains fallback",
       "description": "Briefly states that the fallback favors renderer compatibility while preserving the architecture idea.",
-      "weight": 0.15
+      "max_score": 15
     }
   ],
   "metadata": {

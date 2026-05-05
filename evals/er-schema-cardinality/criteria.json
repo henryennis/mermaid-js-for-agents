@@ -1,24 +1,26 @@
 {
-  "criteria": [
+  "context": "Tests whether the Mermaid diagrams skill helps an agent complete the er-schema-cardinality scenario while following diagram type, syntax, semantic, renderer, safety, and claim-discipline guidance relevant to the task.",
+  "type": "weighted_checklist",
+  "checklist": [
     {
       "name": "Uses ER diagram",
       "description": "Uses Mermaid erDiagram syntax rather than a flowchart or class diagram.",
-      "weight": 0.25
+      "max_score": 25
     },
     {
       "name": "Models all entities",
       "description": "Includes User, Diagram, and Review entities with clear names.",
-      "weight": 0.2
+      "max_score": 20
     },
     {
       "name": "Correct cardinality",
       "description": "Represents User-to-Diagram as one-to-many, Diagram-to-Review as zero-or-more reviews, and each Review belonging to one User and one Diagram.",
-      "weight": 0.35
+      "max_score": 35
     },
     {
       "name": "Assumptions note",
       "description": "Briefly states any assumptions without inventing unnecessary fields.",
-      "weight": 0.2
+      "max_score": 20
     }
   ],
   "metadata": {

@@ -1,24 +1,26 @@
 {
-  "criteria": [
+  "context": "Tests whether the Mermaid diagrams skill helps an agent complete the state-lifecycle-repair scenario while following diagram type, syntax, semantic, renderer, safety, and claim-discipline guidance relevant to the task.",
+  "type": "weighted_checklist",
+  "checklist": [
     {
       "name": "Keeps state diagram type",
       "description": "Repairs the diagram as stateDiagram-v2 rather than switching diagram types.",
-      "weight": 0.25
+      "max_score": 25
     },
     {
       "name": "Fixes missing transition label colon",
       "description": "Adds the missing colon before the approve label or otherwise makes that transition valid Mermaid.",
-      "weight": 0.35
+      "max_score": 35
     },
     {
       "name": "Preserves lifecycle semantics",
       "description": "Keeps Draft, In Review, Published, submit, approve, and changes requested semantics.",
-      "weight": 0.25
+      "max_score": 25
     },
     {
       "name": "Explains smallest repair",
       "description": "Explains the minimal syntax change without unrelated rewrites.",
-      "weight": 0.15
+      "max_score": 15
     }
   ],
   "metadata": {

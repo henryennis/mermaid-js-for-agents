@@ -1,24 +1,26 @@
 {
-  "criteria": [
+  "context": "Tests whether the Mermaid diagrams skill helps an agent complete the repair-broken-sequence scenario while following diagram type, syntax, semantic, renderer, safety, and claim-discipline guidance relevant to the task.",
+  "type": "weighted_checklist",
+  "checklist": [
     {
       "name": "Preserves sequence diagram intent",
       "description": "The fixed diagram still shows User, Agent, and Renderer with the same request, validation, syntax result, and final response flow.",
-      "weight": 0.35
+      "max_score": 35
     },
     {
       "name": "Fixes syntax locally",
       "description": "The response fixes missing colons or malformed messages without changing to another diagram type.",
-      "weight": 0.35
+      "max_score": 35
     },
     {
       "name": "Provides a concise explanation",
       "description": "The response briefly identifies the repair without a long tutorial.",
-      "weight": 0.2
+      "max_score": 20
     },
     {
       "name": "Uses a fenced Mermaid block",
       "description": "The fixed diagram is returned in a mermaid code fence.",
-      "weight": 0.1
+      "max_score": 10
     }
   ],
   "metadata": {
