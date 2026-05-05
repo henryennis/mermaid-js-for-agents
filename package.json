@@ -73,7 +73,7 @@
     "install:local": "node scripts/install-local.mjs",
     "agentic:compile": "gh aw compile",
     "tessl:lint": "tessl skill lint .",
-    "tessl:review": "tessl skill review .",
+    "tessl:review": "tessl skill review skills/mermaid-diagrams",
     "tessl:eval": "tessl eval run ."
   },
   "lint-staged": {

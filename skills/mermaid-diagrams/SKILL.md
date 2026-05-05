@@ -11,6 +11,7 @@ compatibility:
   Portable Agent Skills format for Pi, Claude Code, Codex, Tessl tiles, and similar coding-agent
   harnesses. Optional validation scripts require Node.js 20+.
 metadata:
+  version: "0.1.0"
   source: https://github.com/mermaid-js/mermaid
   mermaid-version: "11.14.0"
   generated-reference: references/upstream-evidence.md
@@ -37,7 +38,24 @@ Help agents create and repair Mermaid.js diagrams that are correct, readable, ma
 6. If scripts are available, validate generated diagrams with
    `node scripts/validate-mermaid-examples.mjs --file <diagram-or-doc> --parse` or pipe raw Mermaid
    to `node scripts/validate-mermaid-examples.mjs --stdin --parse` before claiming that specific
-   diagram is parser-valid. </quick_start>
+   diagram is parser-valid.
+
+Minimal create pattern:
+
+```mermaid
+flowchart LR
+  request[Request] --> draft[Draft Mermaid]
+  draft --> validate[Validate syntax]
+```
+
+Minimal repair pattern:
+
+```text
+Broken: sequenceDiagram\n  User->>Agent Request diagram
+Fixed:  sequenceDiagram\n  User->>Agent: Request diagram
+```
+
+</quick_start>
 
 <decision_router> Use the user's real communication goal, not the first diagram type they mention:
 

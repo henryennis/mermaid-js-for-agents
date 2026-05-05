@@ -77,18 +77,18 @@ sequenceDiagram
 
 ### Tessl
 
-Validate and publish from the personal `henryennis` Tessl workspace:
+Validate and publish from the personal `henry` Tessl workspace:
 
 ```bash
 tessl skill lint .
-tessl skill review .
-tessl skill publish . --workspace henryennis
+tessl skill review skills/mermaid-diagrams
+tessl skill publish . --workspace henry
 ```
 
 For quality measurement, generate scenarios and run evals:
 
 ```bash
-tessl scenario generate . --count=5 --workspace=henryennis
+tessl scenario generate . --count=5 --workspace=henry
 tessl scenario download --last
 tessl eval run .
 ```
@@ -164,8 +164,8 @@ flowchart LR
 2. Run `npm run check`.
 3. Merge to `main`.
 4. Npm publishing is deferred for now; keep release publishing gated until registry launch.
-5. Publish the Tessl tile from the same version from the `henryennis` workspace once Tessl
-   validation passes.
+5. Publish the Tessl tile from the same version from the `henry` workspace once Tessl validation
+   passes.
 
 ## Project status
 

@@ -8,7 +8,7 @@ published as a reusable package.
 - Node.js 20.18 or newer.
 - A checked-out copy of this package.
 - The target agent CLI if you want harness-specific installation.
-- Tessl CLI and access to the `henryennis` Tessl workspace if you want to publish the Tessl tile.
+- Tessl CLI and access to the `henry` Tessl workspace if you want to publish the Tessl tile.
 
 ## Local development
 
@@ -25,16 +25,16 @@ are left untouched unless you pass `--force`, which backs them up before replaci
 
 ## Tessl tile
 
-1. Validate the skill and tile against the `henryennis` Tessl workspace.
+1. Validate the skill and tile against the `henry` Tessl workspace.
 2. Publish privately first, then make it public once evals are meaningful.
 
 ```bash
 tessl skill lint .
-tessl skill review .
-tessl scenario generate . --count=5 --workspace=henryennis
+tessl skill review skills/mermaid-diagrams
+tessl scenario generate . --count=5 --workspace=henry
 tessl scenario download --last
 tessl eval run .
-tessl skill publish . --workspace henryennis
+tessl skill publish . --workspace henry
 ```
 
 ## Pi
